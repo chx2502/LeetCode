@@ -14,53 +14,38 @@ struct ListNode {
     struct ListNode *next;
 };
 
-struct ListNode * CreateList(int N) {
-    struct ListNode *ret = (struct ListNode*)malloc(sizeof(struct ListNode));
-    struct ListNode *tail = ret;
-    for (int i = 0; i < N; i++) {
-        struct ListNode *node = (struct ListNode*)malloc(sizeof(struct ListNode));
-        node->next = NULL;
-        scanf("%d", &node->val);
-        tail->next = node;
-        tail = node;
-    }
-    return ret;
-}
-
 struct ListNode* mergeTwoLists(struct ListNode* l1, struct ListNode* l2) {
-    if (l1->next == NULL) return l2;
-    if (l2->next == NULL) return l1;
-    struct ListNode *ret = (struct ListNode*)malloc(sizeof(struct ListNode));
-    ret->next = NULL;
-    struct ListNode *p, *q, *tail;
-    p = l1->next;
-    q = l2->next;
-    tail = ret;
-    while (p != NULL && q != NULL) {
-        if (p->val <= q->val) {
-            tail->next = p;
-            p = p->next;
+    struct ListNode *dummy, *tail, *l1_ptr, *l2_ptr;
+    dummy = (struct ListNode*)malloc(sizeof(struct ListNode));
+    dummy->val = -1;
+    dummy->next = NULL;
+    tail = dummy;
+    l1_ptr = l1;
+    l2_ptr = l2;
+    while(l1_ptr != NULL && l2_ptr != NULL) {
+        if (l1_ptr->val < l2_ptr->val) {
+            tail->next = l1_ptr;
+            l1_ptr = l1_ptr->next;
         } else {
-            tail->next = q;
-            q = q->next;
+            tail->next = l2_ptr;
+            l2_ptr = l2_ptr->next;
         }
         tail = tail->next;
     }
-    if (p == NULL)
-        tail->next = q;
-    if (q == NULL)
-        tail->next = p;
-    return ret;
+    while (l1_ptr != NULL) {
+        tail->next = l1_ptr;
+        tail = tail->next;
+        l1_ptr = l1_ptr->next;
+    }
+    while (l2_ptr != NULL) {
+        tail->next = l2_ptr;
+        tail = tail->next;
+        l2_ptr = l2_ptr->next;
+    }
+    return dummy->next;
 }
 
 int main(int argc, const char * argv[]) {
-    struct ListNode *l1 = CreateList(3);
-    struct ListNode *l2 = CreateList(3);
-    l1 = mergeTwoLists(l1, l2);
-    struct ListNode *p = l1->next;
-    while (p) {
-        printf("%d,", p->val);
-        p = p->next;
-    }
+
     return 0;
 }
