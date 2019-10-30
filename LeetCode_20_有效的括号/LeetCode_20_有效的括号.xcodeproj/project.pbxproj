@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		501B14E12245CCDC006E9715 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 501B14E02245CCDC006E9715 /* main.c */; };
+		50A468072363FE93002B5805 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A468062363FE93002B5805 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		501B14DB2245CCDC006E9715 /* CopyFiles */ = {
+		50A468012363FE93002B5805 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		501B14DD2245CCDC006E9715 /* LeetCode_20_有效的括号 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_20_有效的括号"; sourceTree = BUILT_PRODUCTS_DIR; };
-		501B14E02245CCDC006E9715 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		50A468032363FE93002B5805 /* LeetCode_20_有效的括号 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_20_有效的括号"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A468062363FE93002B5805 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		501B14DA2245CCDC006E9715 /* Frameworks */ = {
+		50A468002363FE93002B5805 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		501B14D42245CCDC006E9715 = {
+		50A467FA2363FE93002B5805 = {
 			isa = PBXGroup;
 			children = (
-				501B14DF2245CCDC006E9715 /* LeetCode_20_有效的括号 */,
-				501B14DE2245CCDC006E9715 /* Products */,
+				50A468052363FE93002B5805 /* LeetCode_20_有效的括号 */,
+				50A468042363FE93002B5805 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		501B14DE2245CCDC006E9715 /* Products */ = {
+		50A468042363FE93002B5805 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				501B14DD2245CCDC006E9715 /* LeetCode_20_有效的括号 */,
+				50A468032363FE93002B5805 /* LeetCode_20_有效的括号 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		501B14DF2245CCDC006E9715 /* LeetCode_20_有效的括号 */ = {
+		50A468052363FE93002B5805 /* LeetCode_20_有效的括号 */ = {
 			isa = PBXGroup;
 			children = (
-				501B14E02245CCDC006E9715 /* main.c */,
+				50A468062363FE93002B5805 /* main.cpp */,
 			);
 			path = "LeetCode_20_有效的括号";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		501B14DC2245CCDC006E9715 /* LeetCode_20_有效的括号 */ = {
+		50A468022363FE93002B5805 /* LeetCode_20_有效的括号 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 501B14E42245CCDC006E9715 /* Build configuration list for PBXNativeTarget "LeetCode_20_有效的括号" */;
+			buildConfigurationList = 50A4680A2363FE93002B5805 /* Build configuration list for PBXNativeTarget "LeetCode_20_有效的括号" */;
 			buildPhases = (
-				501B14D92245CCDC006E9715 /* Sources */,
-				501B14DA2245CCDC006E9715 /* Frameworks */,
-				501B14DB2245CCDC006E9715 /* CopyFiles */,
+				50A467FF2363FE93002B5805 /* Sources */,
+				50A468002363FE93002B5805 /* Frameworks */,
+				50A468012363FE93002B5805 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,53 @@
 			);
 			name = "LeetCode_20_有效的括号";
 			productName = "LeetCode_20_有效的括号";
-			productReference = 501B14DD2245CCDC006E9715 /* LeetCode_20_有效的括号 */;
+			productReference = 50A468032363FE93002B5805 /* LeetCode_20_有效的括号 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		501B14D52245CCDC006E9715 /* Project object */ = {
+		50A467FB2363FE93002B5805 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "成鑫";
 				TargetAttributes = {
-					501B14DC2245CCDC006E9715 = {
-						CreatedOnToolsVersion = 10.1;
+					50A468022363FE93002B5805 = {
+						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 501B14D82245CCDC006E9715 /* Build configuration list for PBXProject "LeetCode_20_有效的括号" */;
+			buildConfigurationList = 50A467FE2363FE93002B5805 /* Build configuration list for PBXProject "LeetCode_20_有效的括号" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 501B14D42245CCDC006E9715;
-			productRefGroup = 501B14DE2245CCDC006E9715 /* Products */;
+			mainGroup = 50A467FA2363FE93002B5805;
+			productRefGroup = 50A468042363FE93002B5805 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				501B14DC2245CCDC006E9715 /* LeetCode_20_有效的括号 */,
+				50A468022363FE93002B5805 /* LeetCode_20_有效的括号 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		501B14D92245CCDC006E9715 /* Sources */ = {
+		50A467FF2363FE93002B5805 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501B14E12245CCDC006E9715 /* main.c in Sources */,
+				50A468072363FE93002B5805 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		501B14E22245CCDC006E9715 /* Debug */ = {
+		50A468082363FE93002B5805 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -176,7 +176,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		501B14E32245CCDC006E9715 /* Release */ = {
+		50A468092363FE93002B5805 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,14 +229,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		501B14E52245CCDC006E9715 /* Debug */ = {
+		50A4680B2363FE93002B5805 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -244,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		501B14E62245CCDC006E9715 /* Release */ = {
+		50A4680C2363FE93002B5805 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,25 +255,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		501B14D82245CCDC006E9715 /* Build configuration list for PBXProject "LeetCode_20_有效的括号" */ = {
+		50A467FE2363FE93002B5805 /* Build configuration list for PBXProject "LeetCode_20_有效的括号" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				501B14E22245CCDC006E9715 /* Debug */,
-				501B14E32245CCDC006E9715 /* Release */,
+				50A468082363FE93002B5805 /* Debug */,
+				50A468092363FE93002B5805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		501B14E42245CCDC006E9715 /* Build configuration list for PBXNativeTarget "LeetCode_20_有效的括号" */ = {
+		50A4680A2363FE93002B5805 /* Build configuration list for PBXNativeTarget "LeetCode_20_有效的括号" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				501B14E52245CCDC006E9715 /* Debug */,
-				501B14E62245CCDC006E9715 /* Release */,
+				50A4680B2363FE93002B5805 /* Debug */,
+				50A4680C2363FE93002B5805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 501B14D52245CCDC006E9715 /* Project object */;
+	rootObject = 50A467FB2363FE93002B5805 /* Project object */;
 }
