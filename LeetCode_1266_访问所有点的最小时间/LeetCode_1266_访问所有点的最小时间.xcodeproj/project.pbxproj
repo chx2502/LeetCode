@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50C23FA3239E82CD001142AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C23FA2239E82CD001142AD /* main.cpp */; };
+		50C23F44239BD34E001142AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C23F43239BD34E001142AD /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		50C23F9D239E82CD001142AD /* CopyFiles */ = {
+		50C23F3E239BD34E001142AD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		50C23F9F239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_96_不同的二叉搜索树"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50C23FA2239E82CD001142AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		50C23F40239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_1266_访问所有点的最小时间"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C23F43239BD34E001142AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50C23F9C239E82CD001142AD /* Frameworks */ = {
+		50C23F3D239BD34E001142AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		50C23F96239E82CD001142AD = {
+		50C23F37239BD34E001142AD = {
 			isa = PBXGroup;
 			children = (
-				50C23FA1239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */,
-				50C23FA0239E82CD001142AD /* Products */,
+				50C23F42239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */,
+				50C23F41239BD34E001142AD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		50C23FA0239E82CD001142AD /* Products */ = {
+		50C23F41239BD34E001142AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50C23F9F239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */,
+				50C23F40239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50C23FA1239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */ = {
+		50C23F42239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */ = {
 			isa = PBXGroup;
 			children = (
-				50C23FA2239E82CD001142AD /* main.cpp */,
+				50C23F43239BD34E001142AD /* main.cpp */,
 			);
-			path = "LeetCode_96_不同的二叉搜索树";
+			path = "LeetCode_1266_访问所有点的最小时间";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50C23F9E239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */ = {
+		50C23F3F239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50C23FA6239E82CD001142AD /* Build configuration list for PBXNativeTarget "LeetCode_96_不同的二叉搜索树" */;
+			buildConfigurationList = 50C23F47239BD34E001142AD /* Build configuration list for PBXNativeTarget "LeetCode_1266_访问所有点的最小时间" */;
 			buildPhases = (
-				50C23F9B239E82CD001142AD /* Sources */,
-				50C23F9C239E82CD001142AD /* Frameworks */,
-				50C23F9D239E82CD001142AD /* CopyFiles */,
+				50C23F3C239BD34E001142AD /* Sources */,
+				50C23F3D239BD34E001142AD /* Frameworks */,
+				50C23F3E239BD34E001142AD /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LeetCode_96_不同的二叉搜索树";
-			productName = "LeetCode_96_不同的二叉搜索树";
-			productReference = 50C23F9F239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */;
+			name = "LeetCode_1266_访问所有点的最小时间";
+			productName = "LeetCode_1266_访问所有点的最小时间";
+			productReference = 50C23F40239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		50C23F97239E82CD001142AD /* Project object */ = {
+		50C23F38239BD34E001142AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = __Ninja__;
 				TargetAttributes = {
-					50C23F9E239E82CD001142AD = {
+					50C23F3F239BD34E001142AD = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 50C23F9A239E82CD001142AD /* Build configuration list for PBXProject "LeetCode_96_不同的二叉搜索树" */;
+			buildConfigurationList = 50C23F3B239BD34E001142AD /* Build configuration list for PBXProject "LeetCode_1266_访问所有点的最小时间" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 50C23F96239E82CD001142AD;
-			productRefGroup = 50C23FA0239E82CD001142AD /* Products */;
+			mainGroup = 50C23F37239BD34E001142AD;
+			productRefGroup = 50C23F41239BD34E001142AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50C23F9E239E82CD001142AD /* LeetCode_96_不同的二叉搜索树 */,
+				50C23F3F239BD34E001142AD /* LeetCode_1266_访问所有点的最小时间 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		50C23F9B239E82CD001142AD /* Sources */ = {
+		50C23F3C239BD34E001142AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C23FA3239E82CD001142AD /* main.cpp in Sources */,
+				50C23F44239BD34E001142AD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		50C23FA4239E82CD001142AD /* Debug */ = {
+		50C23F45239BD34E001142AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		50C23FA5239E82CD001142AD /* Release */ = {
+		50C23F46239BD34E001142AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		50C23FA7239E82CD001142AD /* Debug */ = {
+		50C23F48239BD34E001142AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		50C23FA8239E82CD001142AD /* Release */ = {
+		50C23F49239BD34E001142AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50C23F9A239E82CD001142AD /* Build configuration list for PBXProject "LeetCode_96_不同的二叉搜索树" */ = {
+		50C23F3B239BD34E001142AD /* Build configuration list for PBXProject "LeetCode_1266_访问所有点的最小时间" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50C23FA4239E82CD001142AD /* Debug */,
-				50C23FA5239E82CD001142AD /* Release */,
+				50C23F45239BD34E001142AD /* Debug */,
+				50C23F46239BD34E001142AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50C23FA6239E82CD001142AD /* Build configuration list for PBXNativeTarget "LeetCode_96_不同的二叉搜索树" */ = {
+		50C23F47239BD34E001142AD /* Build configuration list for PBXNativeTarget "LeetCode_1266_访问所有点的最小时间" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50C23FA7239E82CD001142AD /* Debug */,
-				50C23FA8239E82CD001142AD /* Release */,
+				50C23F48239BD34E001142AD /* Debug */,
+				50C23F49239BD34E001142AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 50C23F97239E82CD001142AD /* Project object */;
+	rootObject = 50C23F38239BD34E001142AD /* Project object */;
 }

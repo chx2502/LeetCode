@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6FC03868-496D-4049-84B2-0470D6A81928"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7F69AB0-0853-4E57-A7EB-CFF38C9E8324"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C0BF3E50-03A4-4111-86F6-55E50A4C17D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FEE5D18-DC43-4CDA-8625-FAEEB4B36563"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "oddCells(n, m, indices)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7FEE5D18-DC43-4CDA-8625-FAEEB4B36563 - ab6c01f0e32519ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solution::oddCells(int, int, std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chengxin/Documents/GitHub/LeetCode/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "7FEE5D18-DC43-4CDA-8625-FAEEB4B36563 - ab6c01f0e32519ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solution::oddCells(int, int, std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chengxin/Documents/GitHub/LeetCode/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54AAE75B-570F-4DA1-9626-50B0909D86E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "oddCells(n, m, indices)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "54AAE75B-570F-4DA1-9626-50B0909D86E7 - ab6c01f0e32519ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solution::oddCells(int, int, std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chengxin/Documents/GitHub/LeetCode/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "697">
+               </Location>
+               <Location
+                  uuid = "54AAE75B-570F-4DA1-9626-50B0909D86E7 - ab6c01f0e32519ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solution::oddCells(int, int, std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "LeetCode_1252_&#x5947;&#x6570;&#x503c;&#x5355;&#x5143;&#x683c;&#x7684;&#x6570;&#x76ee;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chengxin/Documents/GitHub/LeetCode/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/LeetCode_1252_%E5%A5%87%E6%95%B0%E5%80%BC%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E6%95%B0%E7%9B%AE/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "778">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
