@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		500D3748240819740070042F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 500D3747240819740070042F /* main.cpp */; };
+		502F6B87240832A5003C652F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 502F6B86240832A5003C652F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		500D3742240819740070042F /* CopyFiles */ = {
+		502F6B81240832A5003C652F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		500D3744240819740070042F /* LeetCode_290_二进制链表转整数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_290_二进制链表转整数"; sourceTree = BUILT_PRODUCTS_DIR; };
-		500D3747240819740070042F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		502F6B83240832A5003C652F /* LeetCode_1290_二进制链表转整数 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_1290_二进制链表转整数"; sourceTree = BUILT_PRODUCTS_DIR; };
+		502F6B86240832A5003C652F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		500D3741240819740070042F /* Frameworks */ = {
+		502F6B80240832A5003C652F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		500D373B240819740070042F = {
+		502F6B7A240832A5003C652F = {
 			isa = PBXGroup;
 			children = (
-				500D3746240819740070042F /* LeetCode_290_二进制链表转整数 */,
-				500D3745240819740070042F /* Products */,
+				502F6B85240832A5003C652F /* LeetCode_1290_二进制链表转整数 */,
+				502F6B84240832A5003C652F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		500D3745240819740070042F /* Products */ = {
+		502F6B84240832A5003C652F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				500D3744240819740070042F /* LeetCode_290_二进制链表转整数 */,
+				502F6B83240832A5003C652F /* LeetCode_1290_二进制链表转整数 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		500D3746240819740070042F /* LeetCode_290_二进制链表转整数 */ = {
+		502F6B85240832A5003C652F /* LeetCode_1290_二进制链表转整数 */ = {
 			isa = PBXGroup;
 			children = (
-				500D3747240819740070042F /* main.cpp */,
+				502F6B86240832A5003C652F /* main.cpp */,
 			);
-			path = "LeetCode_290_二进制链表转整数";
+			path = "LeetCode_1290_二进制链表转整数";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		500D3743240819740070042F /* LeetCode_290_二进制链表转整数 */ = {
+		502F6B82240832A5003C652F /* LeetCode_1290_二进制链表转整数 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 500D374B240819740070042F /* Build configuration list for PBXNativeTarget "LeetCode_290_二进制链表转整数" */;
+			buildConfigurationList = 502F6B8A240832A5003C652F /* Build configuration list for PBXNativeTarget "LeetCode_1290_二进制链表转整数" */;
 			buildPhases = (
-				500D3740240819740070042F /* Sources */,
-				500D3741240819740070042F /* Frameworks */,
-				500D3742240819740070042F /* CopyFiles */,
+				502F6B7F240832A5003C652F /* Sources */,
+				502F6B80240832A5003C652F /* Frameworks */,
+				502F6B81240832A5003C652F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LeetCode_290_二进制链表转整数";
-			productName = "LeetCode_290_二进制链表转整数";
-			productReference = 500D3744240819740070042F /* LeetCode_290_二进制链表转整数 */;
+			name = "LeetCode_1290_二进制链表转整数";
+			productName = "LeetCode_1290_二进制链表转整数";
+			productReference = 502F6B83240832A5003C652F /* LeetCode_1290_二进制链表转整数 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		500D373C240819740070042F /* Project object */ = {
+		502F6B7B240832A5003C652F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = __Ninja__;
 				TargetAttributes = {
-					500D3743240819740070042F = {
+					502F6B82240832A5003C652F = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 500D373F240819740070042F /* Build configuration list for PBXProject "LeetCode_290_二进制链表转整数" */;
+			buildConfigurationList = 502F6B7E240832A5003C652F /* Build configuration list for PBXProject "LeetCode_1290_二进制链表转整数" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 500D373B240819740070042F;
-			productRefGroup = 500D3745240819740070042F /* Products */;
+			mainGroup = 502F6B7A240832A5003C652F;
+			productRefGroup = 502F6B84240832A5003C652F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				500D3743240819740070042F /* LeetCode_290_二进制链表转整数 */,
+				502F6B82240832A5003C652F /* LeetCode_1290_二进制链表转整数 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		500D3740240819740070042F /* Sources */ = {
+		502F6B7F240832A5003C652F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				500D3748240819740070042F /* main.cpp in Sources */,
+				502F6B87240832A5003C652F /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		500D3749240819740070042F /* Debug */ = {
+		502F6B88240832A5003C652F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		500D374A240819740070042F /* Release */ = {
+		502F6B89240832A5003C652F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		500D374C240819740070042F /* Debug */ = {
+		502F6B8B240832A5003C652F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		500D374D240819740070042F /* Release */ = {
+		502F6B8C240832A5003C652F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		500D373F240819740070042F /* Build configuration list for PBXProject "LeetCode_290_二进制链表转整数" */ = {
+		502F6B7E240832A5003C652F /* Build configuration list for PBXProject "LeetCode_1290_二进制链表转整数" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				500D3749240819740070042F /* Debug */,
-				500D374A240819740070042F /* Release */,
+				502F6B88240832A5003C652F /* Debug */,
+				502F6B89240832A5003C652F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		500D374B240819740070042F /* Build configuration list for PBXNativeTarget "LeetCode_290_二进制链表转整数" */ = {
+		502F6B8A240832A5003C652F /* Build configuration list for PBXNativeTarget "LeetCode_1290_二进制链表转整数" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				500D374C240819740070042F /* Debug */,
-				500D374D240819740070042F /* Release */,
+				502F6B8B240832A5003C652F /* Debug */,
+				502F6B8C240832A5003C652F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 500D373C240819740070042F /* Project object */;
+	rootObject = 502F6B7B240832A5003C652F /* Project object */;
 }

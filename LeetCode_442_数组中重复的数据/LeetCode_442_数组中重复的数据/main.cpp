@@ -17,7 +17,7 @@ public:
      核心思路：
      原地实现 hash。
      对于 nums 中的每一个 0 < num < n+1，给其分配一个下标 index = |num|-1,
-     对每个 num，每遇到一次 num 就使 nums[index] 变号，
+     对每个 num，遇到一次 num 就使 nums[index] 变号，
      这样一来，当一个 num 再次被遍历到时，
      nums[index] < 0，此时的 |num| 即为出现 2 次的数。
      **/
