@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "4D7DE19E-032A-4AF8-AF93-644FB3C3828F"
+   uuid = "35916D4A-8E51-43C7-ADD1-6703DAC2F124"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5008115E-6D94-4573-B3FF-8764C5FE4CA4"
+            uuid = "ADBF3BAB-B2EF-436F-A20C-764217A412EA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LeetCode_1282_&#x7528;&#x6237;&#x5206;&#x7ec4;/main.cpp"
+            filePath = "LeetCode_590_&#x6590;&#x6ce2;&#x90a3;&#x5951;&#x6570;/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "Solution"
-            landmarkType = "3">
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "91BB7D26-BE1E-4FC9-8AD0-B8DB72FADC75"
+            uuid = "D772C7FA-7D85-4C7F-BC3E-612562D955C9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LeetCode_1282_&#x7528;&#x6237;&#x5206;&#x7ec4;/main.cpp"
+            filePath = "LeetCode_590_&#x6590;&#x6ce2;&#x90a3;&#x5951;&#x6570;/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
