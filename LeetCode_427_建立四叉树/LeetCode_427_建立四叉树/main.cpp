@@ -50,6 +50,14 @@ public:
 
 class Solution {
 public:
+    /*
+     核心思路：
+     当前矩阵由三个参数确定：左上角元素的行号 row 列号 col，以及矩阵规模 N
+     判断当前矩阵是否为叶子节点，方法为比较左上角元素和其他元素的关系，
+     若出现不等则为非叶节点，需要继续划分，每个划分后的矩阵规模为 N/2 * N/2，
+     这 4 个矩阵递归地生成当前节点的 4 个子节点。
+     若元素全相等则返回一个叶子节点 (true, grid[row][col])。
+     **/
     Node* helper(vector<vector<int>>& grid, int row, int col, int N) {
         int first = grid[row][col];
         Node *result = new Node();
@@ -57,13 +65,22 @@ public:
         int m, n;
         m = row+N;
         n = col+N;
-        for (int i = row; i < m; ++i)
+        
+        // 遍历比较每个元素与左上角元素的值
+        for (int i = row; i < m; ++i) {
             for (int j = col; j < n; ++j)
-                if (grid[i][j] != first) isLeaf = false;
+                if (grid[i][j] != first) {
+                    isLeaf = false;
+                    break;
+                }
+            if (!isLeaf) break;
+        }
+        
         if (isLeaf) {
             result->val = first;
             result->isLeaf = isLeaf;
         } else {
+            // 存在不一样的元素，递归计算子节点，每个子矩阵的行列数减半
             N /= 2;
             result->isLeaf = isLeaf;
             result->topLeft = helper(grid, row, col, N);
