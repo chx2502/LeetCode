@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50E0ED2522EAE8CB00723610 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50E0ED2422EAE8CB00723610 /* main.cpp */; };
+		507CD730241BC14B00EA9007 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 507CD72F241BC14B00EA9007 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		50E0ED1F22EAE8CA00723610 /* CopyFiles */ = {
+		507CD72A241BC14B00EA9007 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		50E0ED2122EAE8CB00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_103_二叉树的锯齿形层次遍历"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50E0ED2422EAE8CB00723610 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		507CD72C241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_103_二叉树的锯齿形层次遍历"; sourceTree = BUILT_PRODUCTS_DIR; };
+		507CD72F241BC14B00EA9007 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50E0ED1E22EAE8CA00723610 /* Frameworks */ = {
+		507CD729241BC14B00EA9007 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		50E0ED1822EAE8CA00723610 = {
+		507CD723241BC14B00EA9007 = {
 			isa = PBXGroup;
 			children = (
-				50E0ED2322EAE8CB00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */,
-				50E0ED2222EAE8CB00723610 /* Products */,
+				507CD72E241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */,
+				507CD72D241BC14B00EA9007 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		50E0ED2222EAE8CB00723610 /* Products */ = {
+		507CD72D241BC14B00EA9007 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50E0ED2122EAE8CB00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */,
+				507CD72C241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50E0ED2322EAE8CB00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */ = {
+		507CD72E241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */ = {
 			isa = PBXGroup;
 			children = (
-				50E0ED2422EAE8CB00723610 /* main.cpp */,
+				507CD72F241BC14B00EA9007 /* main.cpp */,
 			);
 			path = "LeetCode_103_二叉树的锯齿形层次遍历";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50E0ED2022EAE8CA00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */ = {
+		507CD72B241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50E0ED2822EAE8CB00723610 /* Build configuration list for PBXNativeTarget "LeetCode_103_二叉树的锯齿形层次遍历" */;
+			buildConfigurationList = 507CD733241BC14B00EA9007 /* Build configuration list for PBXNativeTarget "LeetCode_103_二叉树的锯齿形层次遍历" */;
 			buildPhases = (
-				50E0ED1D22EAE8CA00723610 /* Sources */,
-				50E0ED1E22EAE8CA00723610 /* Frameworks */,
-				50E0ED1F22EAE8CA00723610 /* CopyFiles */,
+				507CD728241BC14B00EA9007 /* Sources */,
+				507CD729241BC14B00EA9007 /* Frameworks */,
+				507CD72A241BC14B00EA9007 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,53 +79,54 @@
 			);
 			name = "LeetCode_103_二叉树的锯齿形层次遍历";
 			productName = "LeetCode_103_二叉树的锯齿形层次遍历";
-			productReference = 50E0ED2122EAE8CB00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */;
+			productReference = 507CD72C241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		50E0ED1922EAE8CA00723610 /* Project object */ = {
+		507CD724241BC14B00EA9007 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "成鑫";
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = __Ninja__;
 				TargetAttributes = {
-					50E0ED2022EAE8CA00723610 = {
-						CreatedOnToolsVersion = 10.2.1;
+					507CD72B241BC14B00EA9007 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 50E0ED1C22EAE8CA00723610 /* Build configuration list for PBXProject "LeetCode_103_二叉树的锯齿形层次遍历" */;
+			buildConfigurationList = 507CD727241BC14B00EA9007 /* Build configuration list for PBXProject "LeetCode_103_二叉树的锯齿形层次遍历" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 50E0ED1822EAE8CA00723610;
-			productRefGroup = 50E0ED2222EAE8CB00723610 /* Products */;
+			mainGroup = 507CD723241BC14B00EA9007;
+			productRefGroup = 507CD72D241BC14B00EA9007 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50E0ED2022EAE8CA00723610 /* LeetCode_103_二叉树的锯齿形层次遍历 */,
+				507CD72B241BC14B00EA9007 /* LeetCode_103_二叉树的锯齿形层次遍历 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		50E0ED1D22EAE8CA00723610 /* Sources */ = {
+		507CD728241BC14B00EA9007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E0ED2522EAE8CB00723610 /* main.cpp in Sources */,
+				507CD730241BC14B00EA9007 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		50E0ED2622EAE8CB00723610 /* Debug */ = {
+		507CD731241BC14B00EA9007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -157,7 +158,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -176,7 +176,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		50E0ED2722EAE8CB00723610 /* Release */ = {
+		507CD732241BC14B00EA9007 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -229,14 +228,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		50E0ED2922EAE8CB00723610 /* Debug */ = {
+		507CD734241BC14B00EA9007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -244,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		50E0ED2A22EAE8CB00723610 /* Release */ = {
+		507CD735241BC14B00EA9007 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50E0ED1C22EAE8CA00723610 /* Build configuration list for PBXProject "LeetCode_103_二叉树的锯齿形层次遍历" */ = {
+		507CD727241BC14B00EA9007 /* Build configuration list for PBXProject "LeetCode_103_二叉树的锯齿形层次遍历" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50E0ED2622EAE8CB00723610 /* Debug */,
-				50E0ED2722EAE8CB00723610 /* Release */,
+				507CD731241BC14B00EA9007 /* Debug */,
+				507CD732241BC14B00EA9007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50E0ED2822EAE8CB00723610 /* Build configuration list for PBXNativeTarget "LeetCode_103_二叉树的锯齿形层次遍历" */ = {
+		507CD733241BC14B00EA9007 /* Build configuration list for PBXNativeTarget "LeetCode_103_二叉树的锯齿形层次遍历" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50E0ED2922EAE8CB00723610 /* Debug */,
-				50E0ED2A22EAE8CB00723610 /* Release */,
+				507CD734241BC14B00EA9007 /* Debug */,
+				507CD735241BC14B00EA9007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 50E0ED1922EAE8CA00723610 /* Project object */;
+	rootObject = 507CD724241BC14B00EA9007 /* Project object */;
 }

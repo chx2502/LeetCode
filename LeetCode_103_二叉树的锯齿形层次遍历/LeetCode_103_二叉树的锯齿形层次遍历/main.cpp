@@ -2,12 +2,12 @@
 //  main.cpp
 //  LeetCode_103_二叉树的锯齿形层次遍历
 //
-//  Created by 成鑫 on 2019/7/26.
-//  Copyright © 2019 成鑫. All rights reserved.
+//  Created by chx on 2020/3/13.
+//  Copyright © 2020 __Ninja__. All rights reserved.
 //
 
 #include <iostream>
-#include <vector>
+#include <queue>
 #include <stack>
 
 using namespace std;
@@ -17,44 +17,43 @@ struct TreeNode {
     TreeNode *left;
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- };
+};
 
 class Solution {
 public:
+    /*
+     核心思路：
+     双队列实现层序遍历，每一层生成一个数组
+     根据题目描述，将奇数层（树根视为第 0 层）的遍历结果逆序，随后返回结果。
+     **/
+    
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
-        vector<vector<int>> res;
-        if (!root) return res;
+        vector<vector<int>> result;
+        if (!root) return result;
+        queue<TreeNode*> q1;
+        queue<TreeNode*> q2;
+        q2.push(root);
         
-        stack<TreeNode*> s1, s2;
-        const int LR = 0;
-        const int RL = 1;
-        int direction = RL;
-
-        s1.push(root);
         do {
-            TreeNode *node;
-            vector<int> tmp;
-            while (!s1.empty()) {
-                node = s1.top();
-                s1.pop();
-                s2.push(node);
+            while (!q2.empty()) {
+                q1.push(q2.front());
+                q2.pop();
             }
-            while (!s2.empty()) {
-                node = s2.top();
-                s2.pop();
-                if (direction == LR) {
-                    if (node->left) s1.push(node->left);
-                    if (node->right) s1.push(node->right);
-                } else {
-                    if (node->right) s1.push(node->right);
-                    if (node->left) s1.push(node->left);
-                }
-                tmp.push_back(node->val);
+            vector<int> temp;
+            while (!q1.empty()) {
+                TreeNode *node = q1.front();
+                q1.pop();
+                if (node->left) q2.push(node->left);
+                if (node->right) q2.push(node->right);
+                temp.push_back(node->val);
             }
-            res.push_back(tmp);
-            direction = !direction;
-        } while (!s1.empty());
-        return res;
+            result.push_back(temp);
+        } while (!q2.empty());
+        int size = (int)result.size();
+        for (int i = 0; i < size; ++i) {
+            if (i % 2) reverse(result[i].begin(), result[i].end());
+        }
+        return result;
     }
 };
 

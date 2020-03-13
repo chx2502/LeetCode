@@ -2,8 +2,8 @@
 //  main.cpp
 //  LeetCode_95_不同的二叉搜索树 II
 //
-//  Created by chx on 2019/12/12.
-//  Copyright © 2019 __Ninja__. All rights reserved.
+//  Created by chx on 2020/3/13.
+//  Copyright © 2020 __Ninja__. All rights reserved.
 //
 
 #include <iostream>
@@ -20,17 +20,6 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<TreeNode*> buildTrees(int begin, int end, vector<int>& nums) {
-        vector<TreeNode*> trees;
-        if (begin > end) return trees;
-        if (begin == end) {
-            trees.push_back(new TreeNode(nums[begin]));
-            return trees;
-        }
-        for (int i = begin; i < end; ++i) {
-            
-        }
-    }
     vector<TreeNode*> generateTrees(int n) {
         
     }

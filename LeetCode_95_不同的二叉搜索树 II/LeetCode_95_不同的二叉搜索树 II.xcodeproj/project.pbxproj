@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		509870E023A1E01D000DFB53 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 509870DF23A1E01D000DFB53 /* main.cpp */; };
+		507CD71D241BBCEE00EA9007 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 507CD71C241BBCEE00EA9007 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		509870DA23A1E01D000DFB53 /* CopyFiles */ = {
+		507CD717241BBCEE00EA9007 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		509870DC23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_95_不同的二叉搜索树 II"; sourceTree = BUILT_PRODUCTS_DIR; };
-		509870DF23A1E01D000DFB53 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		507CD719241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode_95_不同的二叉搜索树 II"; sourceTree = BUILT_PRODUCTS_DIR; };
+		507CD71C241BBCEE00EA9007 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		509870D923A1E01D000DFB53 /* Frameworks */ = {
+		507CD716241BBCEE00EA9007 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,26 +38,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		509870D323A1E01D000DFB53 = {
+		507CD710241BBCEE00EA9007 = {
 			isa = PBXGroup;
 			children = (
-				509870DE23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */,
-				509870DD23A1E01D000DFB53 /* Products */,
+				507CD71B241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */,
+				507CD71A241BBCEE00EA9007 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		509870DD23A1E01D000DFB53 /* Products */ = {
+		507CD71A241BBCEE00EA9007 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				509870DC23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */,
+				507CD719241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		509870DE23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */ = {
+		507CD71B241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */ = {
 			isa = PBXGroup;
 			children = (
-				509870DF23A1E01D000DFB53 /* main.cpp */,
+				507CD71C241BBCEE00EA9007 /* main.cpp */,
 			);
 			path = "LeetCode_95_不同的二叉搜索树 II";
 			sourceTree = "<group>";
@@ -65,13 +65,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		509870DB23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */ = {
+		507CD718241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 509870E323A1E01D000DFB53 /* Build configuration list for PBXNativeTarget "LeetCode_95_不同的二叉搜索树 II" */;
+			buildConfigurationList = 507CD720241BBCEE00EA9007 /* Build configuration list for PBXNativeTarget "LeetCode_95_不同的二叉搜索树 II" */;
 			buildPhases = (
-				509870D823A1E01D000DFB53 /* Sources */,
-				509870D923A1E01D000DFB53 /* Frameworks */,
-				509870DA23A1E01D000DFB53 /* CopyFiles */,
+				507CD715241BBCEE00EA9007 /* Sources */,
+				507CD716241BBCEE00EA9007 /* Frameworks */,
+				507CD717241BBCEE00EA9007 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,24 +79,24 @@
 			);
 			name = "LeetCode_95_不同的二叉搜索树 II";
 			productName = "LeetCode_95_不同的二叉搜索树 II";
-			productReference = 509870DC23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */;
+			productReference = 507CD719241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		509870D423A1E01D000DFB53 /* Project object */ = {
+		507CD711241BBCEE00EA9007 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = __Ninja__;
 				TargetAttributes = {
-					509870DB23A1E01D000DFB53 = {
-						CreatedOnToolsVersion = 11.3;
+					507CD718241BBCEE00EA9007 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 509870D723A1E01D000DFB53 /* Build configuration list for PBXProject "LeetCode_95_不同的二叉搜索树 II" */;
+			buildConfigurationList = 507CD714241BBCEE00EA9007 /* Build configuration list for PBXProject "LeetCode_95_不同的二叉搜索树 II" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +104,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 509870D323A1E01D000DFB53;
-			productRefGroup = 509870DD23A1E01D000DFB53 /* Products */;
+			mainGroup = 507CD710241BBCEE00EA9007;
+			productRefGroup = 507CD71A241BBCEE00EA9007 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				509870DB23A1E01D000DFB53 /* LeetCode_95_不同的二叉搜索树 II */,
+				507CD718241BBCEE00EA9007 /* LeetCode_95_不同的二叉搜索树 II */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		509870D823A1E01D000DFB53 /* Sources */ = {
+		507CD715241BBCEE00EA9007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				509870E023A1E01D000DFB53 /* main.cpp in Sources */,
+				507CD71D241BBCEE00EA9007 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		509870E123A1E01D000DFB53 /* Debug */ = {
+		507CD71E241BBCEE00EA9007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		509870E223A1E01D000DFB53 /* Release */ = {
+		507CD71F241BBCEE00EA9007 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +235,7 @@
 			};
 			name = Release;
 		};
-		509870E423A1E01D000DFB53 /* Debug */ = {
+		507CD721241BBCEE00EA9007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		509870E523A1E01D000DFB53 /* Release */ = {
+		507CD722241BBCEE00EA9007 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +254,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		509870D723A1E01D000DFB53 /* Build configuration list for PBXProject "LeetCode_95_不同的二叉搜索树 II" */ = {
+		507CD714241BBCEE00EA9007 /* Build configuration list for PBXProject "LeetCode_95_不同的二叉搜索树 II" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				509870E123A1E01D000DFB53 /* Debug */,
-				509870E223A1E01D000DFB53 /* Release */,
+				507CD71E241BBCEE00EA9007 /* Debug */,
+				507CD71F241BBCEE00EA9007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		509870E323A1E01D000DFB53 /* Build configuration list for PBXNativeTarget "LeetCode_95_不同的二叉搜索树 II" */ = {
+		507CD720241BBCEE00EA9007 /* Build configuration list for PBXNativeTarget "LeetCode_95_不同的二叉搜索树 II" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				509870E423A1E01D000DFB53 /* Debug */,
-				509870E523A1E01D000DFB53 /* Release */,
+				507CD721241BBCEE00EA9007 /* Debug */,
+				507CD722241BBCEE00EA9007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 509870D423A1E01D000DFB53 /* Project object */;
+	rootObject = 507CD711241BBCEE00EA9007 /* Project object */;
 }
