@@ -9,6 +9,7 @@ class Solution {
 public:
     vector<vector<int>> result;
     map<int, bool> used;
+    // 将 result 中的数组排序后，去掉重复数组
     void helper(vector<vector<int>>& matrix) {
         if (matrix.size() == 0) return;
         for (auto &array : matrix) sort(array.begin(), array.end());
