@@ -13,35 +13,36 @@ using namespace std;
 
 class Solution {
 public:
+    /*
+     核心思路：
+     动态规划。
+     dp 数组存放每个下标位置能否到达最后一个位置，故 dp[size-1] = true
+     destination 存储最近的能到达终点的下标值
+     反向遍历 [size-1, 0]，当前下标 i 能到达的最远下标为 nums[i] + i
+     对于每个下标 i:
+         if : nums[i] + i >= destination;
+         then: dp[i] = true; destination = i;
+         return dp[0]
+     **/
     bool canJump(vector<int>& nums) {
-        int length = (int)nums.size();
-        int right, left;
-        right = length-1;
-        left = right;
-        while(left > 0) {
-            left--;
-            if (nums[left] == 0) continue;
-            if (nums[left] + left >= right)
-                nums[left] = 1;
-            else {
-                bool flag = true;
-                for (int i = 1; i <= nums[left]; i++)
-                    if (nums[left+i] > 0) {
-                        nums[left] = 1;
-                        flag = false;
-                        break;
-                    }
-                if (flag) nums[left] = 0;
+        int size = (int)nums.size();
+        if (size <= 1) return true;
+        
+        vector<bool> dp(size, false);
+        dp[size-1] = true;
+        int destination = size-1;
+        for (int i = size-2; i >= 0; --i) {
+            if (nums[i] + i >= destination) {
+                dp[i] = true;
+                destination = i;
             }
         }
-        if (length == 1) return true;
-        if (nums[0] == 1) return true;
-        else return false;
+        return dp[0];
     }
 };
 
 int main(int argc, const char * argv[]) {
-    vector<int> test = {0};
+    vector<int> test = {2, 3, 1, 1, 4};
     Solution s;
     bool result = s.canJump(test);
     return 0;
