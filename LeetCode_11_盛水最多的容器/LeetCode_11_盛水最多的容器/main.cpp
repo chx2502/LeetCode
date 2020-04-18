@@ -20,30 +20,19 @@ public:
      每计算完一次容积，高度较小的指针向另一指针所在方向移动，同时视情况更新 max_capacity
      结束条件：两指针相遇
      */
-    int min(int a, int b) { return a < b ? a : b; }
     int maxArea(vector<int>& height) {
-        unsigned long length = height.size();
+        int length = (int)height.size();
         if (length < 2) return 0;
         int i, j;
         i = 0;
-        j = (int)length - 1;
+        j = length - 1;
         int max_capacity = 0;
         while(i < j) {
             int distance = j - i;
             int capacity = min(height[i], height[j]) * distance;
             if (capacity > max_capacity)
                 max_capacity = capacity;
-//            if (height[i] < height[j]) {
-//                int temp = height[i];
-//                while (height[i] <= temp && i < j)
-//                    i++;
-//            } else {
-//                int temp = height[j];
-//                while (height[j] <= temp && j > i)
-//                    j--;
-//            }
-            if (height[i] < height[j])
-                i++;
+            if (height[i] < height[j]) i++;
             else j--;
         }
         return max_capacity;
