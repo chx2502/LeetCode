@@ -20,9 +20,15 @@ public:
         int isTravelDay = 0;
         for (int i = 1; i < size; ++i) {
             if (i == days[isTravelDay]) {
-                if (i >= 1) dp[i] = dp[i-1] + min({costs[0], costs[1], costs[2]});
-                if (i >= 7) dp[i] = min(dp[i], dp[i-7] + min(costs[1], costs[2]));
-                if (i >= 30) dp[i] = min(dp[i], dp[i-30] + costs[2]);
+                int day1, day7, day30;
+                day1 = i-1;
+                day7 = i-7 > 0 ? i-7 : 0;
+                day30 = i-30 > 0 ? i-30 : 0;
+                int money = INT_MAX;
+                money = min(money, dp[day1] + costs[0]);
+                money = min(money, dp[day7] + costs[1]);
+                money = min(money, dp[day30] + costs[2]);
+                dp[i] = money;
                 isTravelDay += 1;
             } else dp[i] = dp[i-1];
         }
