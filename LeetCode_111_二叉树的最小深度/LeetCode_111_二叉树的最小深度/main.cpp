@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -23,25 +24,59 @@ struct TreeNode {
  */
 class Solution {
 public:
-    unsigned int min_depth = 0xFFFFFFFF;
+    /*
+     解法1：递归
+     **/
+//    unsigned int min_depth = 0xFFFFFFFF;
+//    void minChildTree(TreeNode *root, int depth) {
+//        if (!root) return;
+//        TreeNode *left_child, *right_child;
+//        left_child = root->left;
+//        right_child = root->right;
+//        if (left_child == NULL && right_child == NULL) {
+//            if (depth + 1 < min_depth) min_depth = depth + 1;
+//        } else {
+//            minChildTree(root->left, depth + 1);
+//            minChildTree(root->right, depth + 1);
+//        }
+//    }
+//
+//    int minDepth(TreeNode* root) {
+//        if (!root) return 0;
+//        minChildTree(root, 0);
+//        return min_depth;
+//    }
+    /*
+     解法2：层序遍历
+     **/
     
-    void minChildTree(TreeNode *root, int depth) {
-        if (!root) return;
-        TreeNode *left_child, *right_child;
-        left_child = root->left;
-        right_child = root->right;
-        if (left_child == NULL && right_child == NULL) {
-            if (depth + 1 < min_depth) min_depth = depth + 1;
-        } else {
-            minChildTree(root->left, depth + 1);
-            minChildTree(root->right, depth + 1);
+    int levelTraversal(TreeNode* root) {
+        queue<TreeNode*> Q;
+        queue<TreeNode*> temp;
+        Q.push(root);
+        int curr_level = 1;
+        while (!Q.empty()) {
+            TreeNode *node = Q.front();
+            Q.pop();
+            if (!node->left && !node->right) return curr_level;
+            else {
+                if (node->left) temp.push(node->left);
+                if (node->right) temp.push(node->right);
+            }
+            if (Q.empty() && !temp.empty()) {
+                while(!temp.empty()) {
+                    Q.push(temp.front());
+                    temp.pop();
+                }
+                curr_level++;
+            }
         }
+        return curr_level;
     }
     
     int minDepth(TreeNode* root) {
         if (!root) return 0;
-        minChildTree(root, 0);
-        return min_depth;
+        return levelTraversal(root);
     }
 };
 
