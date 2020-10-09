@@ -21,21 +21,29 @@ struct TreeNode {
 
 class Solution {
 public:
+//    TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
+//        if (t1 == nullptr && t2 == nullptr) return NULL;
+//        TreeNode *root = new TreeNode(0);
+//        if (t1 != nullptr) root->val += t1->val;
+//        else t1 = new TreeNode(0);
+//        if (t2 != nullptr) root->val += t2->val;
+//        else t2 = new TreeNode(0);
+//
+//        if (t1->left && t2->left) root->left = mergeTrees(t1->left, t2->left);
+//        else if (t1->left) root->left = mergeTrees(t1->left, new TreeNode(0));
+//        else if (t2->left) root->left = mergeTrees(new TreeNode(0), t2->left);
+//        if (t1->right && t2->right)root->right = mergeTrees(t1->right, t2->right);
+//        else if (t1->right) root->right = mergeTrees(t1->right, new TreeNode(0));
+//        else if (t2->right) root->right = mergeTrees(new TreeNode(0), t2->right);
+//        return root;
+//    }
     TreeNode* mergeTrees(TreeNode* t1, TreeNode* t2) {
-        if (t1 == nullptr && t2 == nullptr) return NULL;
-        TreeNode *root = new TreeNode(0);
-        if (t1 != nullptr) root->val += t1->val;
-        else t1 = new TreeNode(0);
-        if (t2 != nullptr) root->val += t2->val;
-        else t2 = new TreeNode(0);
-        
-        if (t1->left && t2->left) root->left = mergeTrees(t1->left, t2->left);
-        else if (t1->left) root->left = mergeTrees(t1->left, new TreeNode(0));
-        else if (t2->left) root->left = mergeTrees(new TreeNode(0), t2->left);
-        if (t1->right && t2->right)root->right = mergeTrees(t1->right, t2->right);
-        else if (t1->right) root->right = mergeTrees(t1->right, new TreeNode(0));
-        else if (t2->right) root->right = mergeTrees(new TreeNode(0), t2->right);
-        return root;
+        if (!t1) return t2;
+        if (!t2) return t1;
+        t1->val += t2->val;
+        t1->left = mergeTrees(t1->left, t2->left);
+        t1->right = mergeTrees(t1->right, t2->right);
+        return t1;
     }
     
     vector<int> level_tran(TreeNode *root) {

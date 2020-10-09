@@ -19,29 +19,35 @@ struct TreeNode {
 class Solution {
 public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
-        TreeNode *node = new TreeNode(val);
-        if (!root) return node;
-        TreeNode *insert = root;
-        while (true) {
-            bool flag = false;
-            if (insert->val > val) {
-                if (insert->left) insert = insert->left;
-                else {
-                    insert->left = node;
-                    flag = true;
-                }
-            }
-            if (insert->val < val) {
-                if (insert->right) insert = insert->right;
-                else {
-                    insert->right = node;
-                    flag = true;
-                }
-            }
-            if (flag) break;
-        }
+        if (!root) return new TreeNode(val);
+        if (val < root->val) root->left = insertIntoBST(root->left, val);
+        if (val > root->val) root->right = insertIntoBST(root->right, val);
         return root;
     }
+//    TreeNode* insertIntoBST(TreeNode* root, int val) {
+//        TreeNode *node = new TreeNode(val);
+//        if (!root) return node;
+//        TreeNode *insert = root;
+//        while (true) {
+//            bool flag = false;
+//            if (insert->val > val) {
+//                if (insert->left) insert = insert->left;
+//                else {
+//                    insert->left = node;
+//                    flag = true;
+//                }
+//            }
+//            if (insert->val < val) {
+//                if (insert->right) insert = insert->right;
+//                else {
+//                    insert->right = node;
+//                    flag = true;
+//                }
+//            }
+//            if (flag) break;
+//        }
+//        return root;
+//    }
 };
 
 int main(int argc, const char * argv[]) {

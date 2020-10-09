@@ -35,12 +35,24 @@ public:
         while(!stk.empty()) {
             TreeNode *top = stk.top();
             stk.pop();
-            ret.insert(ret.begin(), top->val);
+            ret.push_back(top->val);
             if (top->left) stk.push(top->left);
             if (top->right) stk.push(top->right);
         }
+        reverse(ret.begin(), ret.end());
         return ret;
     }
+//    vector<int> result;
+//    void traversal(TreeNode* root) {
+//        if (!root) return;
+//        traversal(root->left);
+//        traversal(root->right);
+//        result.push_back(root->val);
+//    }
+//    vector<int> postorderTraversal(TreeNode* root) {
+//        if (root) traversal(root);
+//        return result;
+//    }
 };
 
 int main(int argc, const char * argv[]) {

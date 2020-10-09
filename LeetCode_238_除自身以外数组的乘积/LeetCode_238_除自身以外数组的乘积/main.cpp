@@ -14,23 +14,41 @@ using namespace std;
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-        int length = (int)nums.size();
-        vector<int> left(length, 1);
-        vector<int> right(length, 1);
-        
-        for (int i = 1; i < length; ++i) {
-            left[i] = nums[i-1] * left[i-1];
+        int size = (int)nums.size();
+
+        vector<int> result(size, 1);
+        int curr = 1;
+        for (int i = 0; i < size; ++i) {
+            result[i] = curr;
+            curr *= nums[i];
         }
-        for (int i = length-2; i >= 0; --i) {
-            right[i] = nums[i+1] * right[i+1];
+        curr = 1;
+        for (int i = size-1; i >= 0; --i) {
+            result[i] *= curr;
+            curr *= nums[i];
         }
-        
-        vector<int> res;
-        for (int i = 0; i < length; ++i) {
-            res.push_back(left[i] * right[i]);
-        }
-        return res;
+
+        return result;
     }
+    
+//    vector<int> productExceptSelf(vector<int>& nums) {
+//        int length = (int)nums.size();
+//        vector<int> left(length, 1);
+//        vector<int> right(length, 1);
+//
+//        for (int i = 1; i < length; ++i) {
+//            left[i] = nums[i-1] * left[i-1];
+//        }
+//        for (int i = length-2; i >= 0; --i) {
+//            right[i] = nums[i+1] * right[i+1];
+//        }
+//
+//        vector<int> res;
+//        for (int i = 0; i < length; ++i) {
+//            res.push_back(left[i] * right[i]);
+//        }
+//        return res;
+//    }
 };
 
 int main(int argc, const char * argv[]) {

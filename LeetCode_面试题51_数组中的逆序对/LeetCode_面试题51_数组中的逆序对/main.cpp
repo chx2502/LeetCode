@@ -15,7 +15,10 @@ class Solution {
 public:
     /*
      在归并排序中插入计算逆序对的代码。
-     具体计算方式为: 在合并左右两个数组时，若右边数组选中的数小于左边数组，则 count += 左
+     具体计算方式为:
+     当左边数组的第 i 个数被选中时，
+     意味着他大于右边数组的 [0, j-1] 区间上的数
+     贡献逆序对数量为 j 个。
      **/
     void merge(vector<int>& nums, int left, int mid, int right, int& count) {
         if (left >= right) return;
@@ -28,13 +31,18 @@ public:
         right_size = right-mid;
         int index = left;
         while (i < left_size && j < right_size) {
-            if (left_array[i] > right_array[j]) {
+            if (left_array[i] > right_array[j])
                 nums[index] = right_array[j++];
-                count += left_size - i;
-            } else nums[index] = left_array[i++];
+            else {
+                nums[index] = left_array[i++];
+                count += j;
+            }
             index++;
         }
-        while (i < left_size) nums[index++] = left_array[i++];
+        while (i < left_size) {
+            nums[index++] = left_array[i++];
+            count += j;
+        }
         while (j < right_size) nums[index++] = right_array[j++];
     }
     

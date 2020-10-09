@@ -36,7 +36,7 @@ public:
 //        }
 //        return ret;
 //    }
-    //  非暴力解法：首位各一个指针，两者之和大于 target 则大端左移，小于 target 小端右移。
+    //  非暴力解法：首尾各一个指针，两者之和大于 target 则大端左移，小于 target 小端右移。
     //  优化：每次移动指针时跳过所有相同值，知道找到下一个不同值再计算。
     vector<int> twoSum(vector<int>& numbers, int target) {
         int size = (int)numbers.size();

@@ -37,6 +37,12 @@ public:
         }
         return count == 0;
     }
+    bool isValid(string s) {
+
+        
+        
+        
+    }
 };
 
 int main(int argc, const char * argv[]) {
