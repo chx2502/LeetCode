@@ -13,23 +13,34 @@ using namespace std;
 
 class Solution {
 public:
-    void generate(vector<int>& nums, int pre, int next) {
-        if (pre < 0) {
-            int i = 0;
-            int j = (int)nums.size()-1;
-            while (i < j) swap(nums[i++], nums[j--]);
-            return;
-        }
-        if (nums[pre] >= nums[next]) generate(nums, pre-1, pre);
-        else swap(nums[pre], nums[next]);
-    }
     void nextPermutation(vector<int>& nums) {
-        generate(nums, nums.size()-2, nums.size()-1);
+        int size = (int)nums.size();
+        if (size == 0) return;
+        
+        int i, j;
+        j = size-1;
+        i = j-1;
+        
+        while (i >= 0) {
+            if (nums[i] < nums[j]) break;
+            else {
+                i--; j--;
+            }
+        }
+        if (i >= 0) {
+            int k = size-1;
+            while(k >= j) {
+                if (nums[i] < nums[k]) break;
+                else k--;
+            }
+            swap(nums[i], nums[k]);
+        }
+        reverse(nums.begin()+j, nums.end());
     }
 };
 
 int main(int argc, const char * argv[]) {
-    vector<int> nums = {3, 2, 1};
+    vector<int> nums = {1, 3, 2};
     Solution s;
     s.nextPermutation(nums);
     return 0;
