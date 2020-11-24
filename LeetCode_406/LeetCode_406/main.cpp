@@ -12,6 +12,8 @@
 using namespace std;
 
 class Solution {
+private:
+    vector<bool> placed;
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
         int size = (int)people.size();
@@ -22,11 +24,21 @@ public:
             else return A[0] > B[0];
         };
         priority_queue<vector<int>, vector<vector<int>>, decltype(cmp)> pq(cmp);
-        vector<vector<int>> result;
+        vector<vector<int>> result(size);
+        placed.assign(size, false);
+        
         for (auto &array : people) pq.push(array);
         while(!pq.empty()) {
-            result.push_back(pq.top());
+            vector<int> p = pq.top();
             pq.pop();
+            int count = p[1];
+            for (int i = 0; i < size; i++) {
+                if (count == 0 && !placed[i]) {
+                    result[i] = p;
+                    placed[i] = true;
+                    break;
+                } else if (!placed[i]) count--;
+            }
         }
         return result;
     }
