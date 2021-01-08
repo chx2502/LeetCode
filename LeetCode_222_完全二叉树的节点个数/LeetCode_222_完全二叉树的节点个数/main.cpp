@@ -51,7 +51,7 @@ public:
         int end = (1 << (height+1)) -1;
         while (begin < end) {
             int mid = begin + (end - begin+1) / 2;
-            if (search(mid, root, height)) begin = mid
+            if (search(mid, root, height)) begin = mid;
             else end = mid-1;
         }
         return begin;
