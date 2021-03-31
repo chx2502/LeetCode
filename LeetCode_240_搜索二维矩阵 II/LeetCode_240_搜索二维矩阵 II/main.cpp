@@ -54,6 +54,26 @@ public:
             return false;
         }
     }
+    
+    bool findNumberIn2DArray(vector<vector<int>>& matrix, int target) {
+        int m = (int)matrix.size();
+        if (m == 0) return false;
+        int n = (int)matrix[0].size();
+        
+        int x = 0;
+        int y = n-1;
+        while (x >= 0 && y >= 0 && x < m && y < n) {
+            if (matrix[x][y] == target) return true;
+            if (matrix[x][y] > target) {
+                y--;
+            } else {
+                x++;
+            }
+        }
+        return false;
+    }
+    
+    
 };
 
 int main(int argc, const char * argv[]) {

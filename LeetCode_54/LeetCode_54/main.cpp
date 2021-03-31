@@ -13,30 +13,66 @@ using namespace std;
 
 class Solution {
 public:
+//    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+//        vector<int> result;
+//        int m = (int)matrix.size();
+//        if (m == 0) return result;
+//        int n = (int)matrix[0].size();
+//        if (n == 0) return result;
+//
+//        int top, bottom, left, right;
+//        top = left = 0;
+//        bottom = m-1;
+//        right = n-1;
+//        int row, col;
+//        row = col = 0;
+//        while (left <= right && top <= bottom) {
+//            for (col = left; col <= right; col++) result.push_back(matrix[top][col]);
+//            for (row = top+1; row <= bottom; row++) result.push_back(matrix[row][right]);
+//            if (left < right && top < bottom) {
+//                for (col = right-1; col > left; col--) result.push_back(matrix[bottom][col]);
+//                for (row = bottom; row > top; row--) result.push_back(matrix[row][left]);
+//            }
+//            top++;
+//            bottom--;
+//            left++;
+//            right--;
+//        }
+//        return result;
+//    }
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         vector<int> result;
         int m = (int)matrix.size();
         if (m == 0) return result;
         int n = (int)matrix[0].size();
         if (n == 0) return result;
-        
+
         int top, bottom, left, right;
         top = left = 0;
         bottom = m-1;
         right = n-1;
-        int row, col;
-        row = col = 0;
-        while (left <= right && top <= bottom) {
-            for (col = left; col <= right; col++) result.push_back(matrix[top][col]);
-            for (row = top+1; row <= bottom; row++) result.push_back(matrix[row][right]);
-            if (left < right && top < bottom) {
-                for (col = right-1; col > left; col--) result.push_back(matrix[bottom][col]);
-                for (row = bottom; row > top; row--) result.push_back(matrix[row][left]);
+        while(true) {
+            for (int i = left; i <= right; i++) {
+                result.push_back(matrix[top][i]);
             }
             top++;
-            bottom--;
-            left++;
+            if (top > bottom) break;
+            for (int i = top; i <= bottom; i++) {
+                result.push_back(matrix[i][right]);
+            }
             right--;
+            if (left > right) break;
+            for (int i = right; i>= left; i--) {
+                result.push_back(matrix[bottom][i]);
+            }
+            bottom--;
+            if (top > bottom) break;
+            for (int i = bottom; i >= top; i--) {
+                result.push_back(matrix[i][left]);
+            }
+            left++;
+            if (left > right) break;
+
         }
         return result;
     }

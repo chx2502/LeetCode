@@ -32,30 +32,81 @@ public:
         return dummy->next;
     }
     
-    ListNode* reverseBetween(ListNode* head, int m, int n) {
-        if (!head) return NULL;
-        if (m == n) return head;
-        int count = 1;
-        ListNode *p, *q, *pre;
-        pre = p = q = head;
-        while (count < m && p) {
-            pre = p;
+//    ListNode* reverseBetween(ListNode* head, int m, int n) {
+//        if (!head) return NULL;
+//        if (m == n) return head;
+//        int count = 1;
+//        ListNode *p, *q, *pre;
+//        pre = p = q = head;
+//        while (count < m && p) {
+//            pre = p;
+//            p = p->next;
+//            count++;
+//        }
+//        q = p;
+//        while (count <= n && q) {
+//            q = q->next;
+//            count++;
+//        }
+//        if (pre != p) pre->next = reverse(p, q);
+//        else head = reverse(p, q);
+//        return head;
+//    }
+    
+    pair<ListNode*, ListNode*> reverseList(ListNode *head) {
+        ListNode *dummy = new ListNode(-1);
+        ListNode *p = head;
+        while (p) {
+            ListNode *temp = p;
             p = p->next;
-            count++;
+            temp->next = dummy->next;
+            dummy->next = temp;
         }
-        q = p;
-        while (count <= n && q) {
+        ListNode *result = dummy->next;
+        delete dummy;
+        return {result, head};
+    }
+    
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
+        ListNode *dummy = new ListNode(-1);
+        dummy->next = head;
+        ListNode *p, *q;
+        p = q = dummy;
+        int count = 0;
+        while (count < right) {
+            if (count < left-1) p = p->next;
             q = q->next;
             count++;
         }
-        if (pre != p) pre->next = reverse(p, q);
-        else head = reverse(p, q);
-        return head;
+        ListNode *remain = q->next;
+        q->next = nullptr;
+        pair<ListNode*, ListNode*> newList = reverseList(p->next);
+        p->next = newList.first;
+        q = newList.second;
+        q->next = remain;
+        return dummy->next;
+    }
+    int binarySearch(int left, int right, int* arr, int target) {
+        int mid = -1;
+        while(left <= right) {
+            mid = left + right;
+            int curr = arr[mid];
+            if (curr == target) return mid;
+            if (curr > target) {
+                right = mid-1;
+            }
+            if (curr < target) {
+                left = mid+1;
+            }
+        }
+        return -1;
     }
 };
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    int a[] = {1, 2, 3, 4, 5, 7};
+    Solution s;
+    int result = s.binarySearch(0, 5, a, 3);
     return 0;
 }

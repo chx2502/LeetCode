@@ -9,6 +9,9 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <algorithm>
+#include <set>
+
 using namespace std;
 
 struct ListNode {
@@ -100,6 +103,31 @@ vector< vector<int> > test_set = {
     {2, 6}
 };
 
+
+ListNode* solve(ListNode* head) {
+    if (!head) return nullptr;
+    
+    auto cmp = [](ListNode *a, ListNode *b) { return a->val > b->val; };
+    priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq(cmp);
+    
+    ListNode *p = head;
+    while (p) {
+        pq.push(p);
+        p = p->next;
+    }
+    ListNode *dummy = new ListNode(-1);
+    while (!pq.empty()) {
+        ListNode *node = pq.top();
+        pq.pop();
+        node->next = dummy->next;
+        dummy->next = node;
+    }
+    ListNode *result = dummy->next;
+    delete dummy;
+    return result;
+}
+
+
 ListNode* BuildList(vector<int> array_1d) {
     ListNode *dummy, *tail;
     dummy = new ListNode(-666);
@@ -123,9 +151,53 @@ vector<ListNode*> CreateLists(vector< vector<int> > array_2d) {
     return res;
 }
 
+int minK(vector<vector<int>>& matrix, vector<int> &P, int k) {
+    int size = (int)matrix.size();
+    vector<int> pointers(size, 0);
+    int count = 0;
+    set<int> selected;
+    for (auto &row : P) {
+        selected.insert(row);
+    }
+    
+    int result = INT_MAX;
+    while (count < k) {
+        int min = INT_MAX;
+        int shouldMove = -1;
+        for (int i = 0; i < size; i++) {
+            if (selected.count(i) == 0 || pointers[i] == matrix[i].size()) continue;
+            int curr = matrix[i][pointers[i]];
+            if (curr < min) {
+                min = curr;
+                shouldMove = i;
+            }
+        }
+        result = min;
+        pointers[shouldMove]++;
+        count++;
+    }
+    return result;
+}
+
+
 int main(int argc, const char * argv[]) {
-    vector<ListNode*> lists = CreateLists(test_set);
+//    vector< vector<int> > test_set = {
+//        {1, 4, 5},
+//        {1, 3, 4},
+//        {2, 6}
+//    };
+//    vector<ListNode*> lists = CreateLists(test_set);
     Solution s;
-    ListNode *result = s.mergeKLists(lists);
+//    ListNode *result = s.mergeKLists(lists);
+    vector<int> ls = { 4, 1, 3, 2 };
+    ListNode *l = BuildList(ls);
+    ListNode *res = solve(l);
+    
+    vector<vector<int>> tt = {
+        {1, 2, 3,}, {6, 9, 10}, {12, 11, 4}
+    };
+    for (auto &arr : tt) sort(arr.begin(), arr.end());
+    vector<int> P = {1, 2};
+    int res2 = minK(tt, P, 4);
     return 0;
 }

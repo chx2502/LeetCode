@@ -25,28 +25,48 @@ public:
      13 % 8 = 5, 13 = 8 + 5, ret[13] = ret[8] + ret[5]
      5 % 4 = 1, 5 = 4 + 1, ret[5] = ret[4] + ret[1]
      */
+//    vector<int> countBits(int num) {
+//        vector<int> ret;
+//        int i, j;
+//        i = j = 0;
+//        ret.push_back(0);
+//        if (num > 0) ++j;
+//        while (num > i++) {
+//            int temp = i % j;
+//            if (temp == 0) {
+//                j = i;
+//                ret.push_back(1);
+//            } else {
+//                ret.push_back(ret[j] + ret[temp]);
+//            }
+//        }
+//        return ret;
+//    }
+    
     vector<int> countBits(int num) {
-        vector<int> ret;
-        int i, j;
-        i = j = 0;
-        ret.push_back(0);
-        if (num > 0) ++j;
-        while (num > i++) {
-            int temp = i % j;
-            if (temp == 0) {
-                j = i;
-                ret.push_back(1);
-            } else {
-                ret.push_back(ret[j] + ret[temp]);
+        vector<int> result(num+1, 0);
+        if (num == 0) return result;
+        int pre;
+        result[1] = 1;
+        if (num == 1) return result;
+        result[2] = 1;
+        pre = 2;
+        for (int curr = 3; curr <= num; curr++) {
+            int temp = curr % pre;
+            if (temp != 0) result[curr] = result[pre] + result[temp];
+            else {
+                pre = curr;
+                result[curr] = 1;
             }
         }
-        return ret;
+        return result;
     }
 };
 
 int main(int argc, const char * argv[]) {
     Solution s;
-    int num = 0x7FFFFFFF;
-    vector<int> result = s.countBits(num);
+//    int num = 0x7FFFFFFF;
+//    vector<int> result = s.countBits(num);
+    cout << 2%0 << endl;
     return 0;
 }
