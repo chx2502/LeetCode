@@ -2,7 +2,7 @@
 //  main.cpp
 //  LeetCode_416
 //
-//  Created by chx on 2020/10/11.
+//  Created by chx on 2021/4/2.
 //
 
 #include <iostream>
@@ -13,41 +13,50 @@ using namespace std;
 
 class Solution {
 public:
+//    bool canPartition(vector<int>& nums) {
+//        int sum = accumulate(nums.begin(), nums.end(), 0);
+//        if (sum & 1) return false;
+//        int N = sum / 2;
+//
+//        vector<vector<bool>> dp(nums.size()+1, vector<bool>(N+1, false));
+//        dp[0][0] = true;
+//
+//        for (int i = 1; i <= nums.size(); i++) {
+//            int curr = nums[i-1];
+//            for (int j = 1; j <= N; j++) {
+//                // dp[i] 之和 dp[i-1] 有关，可以进行状态压缩
+//                if (j < curr) dp[i][j] = dp[i-1][j];
+//                else dp[i][j] = dp[i-1][j] || dp[i-1][j-curr];
+//            }
+//            if (dp[i][N]) return true;
+//        }
+//        return false;
+//    }
+    
+    // 状态压缩优化
     bool canPartition(vector<int>& nums) {
-        int n = nums.size();
-        if (n < 2) {
-            return false;
-        }
         int sum = accumulate(nums.begin(), nums.end(), 0);
-        int maxNum = *max_element(nums.begin(), nums.end());
-        if (sum & 1) {
-            return false;
-        }
-        int target = sum / 2;
-        if (maxNum > target) {
-            return false;
-        }
-        vector<vector<int>> dp(n, vector<int>(target + 1, 0));
-        for (int i = 0; i < n; i++) {
-            dp[i][0] = true;
-        }
-        dp[0][nums[0]] = true;
-        for (int i = 1; i < n; i++) {
-            int num = nums[i];
-            for (int j = 1; j <= target; j++) {
-                if (j >= num) {
-                    dp[i][j] = dp[i - 1][j] | dp[i - 1][j - num];
-                } else {
-                    dp[i][j] = dp[i - 1][j];
-                }
+        if ((sum & 1) == 1) return false;
+        int N = sum / 2;
+
+        vector<bool> dp(N+1, false);
+        dp[0] = true;
+        
+        for (int i = 1; i <= nums.size(); i++) {
+            int curr = nums[i-1];
+            // 0-1背包状态压缩注意遍历顺序
+            for (int j = N; j >= curr; j--) {
+                dp[j] = dp[j] || dp[j-curr];
+                if (dp[N]) return true;
             }
         }
-        return dp[n - 1][target];
+        return dp[N];
     }
 };
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Solution s;
+    vector<int> nums = {1, 2, 5};
+    bool result = s.canPartition(nums);
     return 0;
 }

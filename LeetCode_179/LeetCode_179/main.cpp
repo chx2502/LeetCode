@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -36,7 +37,6 @@ public:
 };
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
     return 0;
 }

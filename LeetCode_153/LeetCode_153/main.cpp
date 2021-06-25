@@ -2,8 +2,7 @@
 //  main.cpp
 //  LeetCode_153
 //
-//  Created by chx on 2020/8/26.
-//  Copyright © 2020 __Ninja__. All rights reserved.
+//  Created by chx on 2021/4/8.
 //
 
 #include <iostream>
@@ -13,15 +12,14 @@ using namespace std;
 
 class Solution {
 public:
-    
     int bSearch(int begin, int end, vector<int>& nums) {
-        if (begin >= end) return nums[begin];
-        int mid = begin + (end-begin)/2;
-        
-        if (nums[mid] < nums[begin] && nums[mid] < nums[end])
-            return min(bSearch(begin, mid-1, nums), bSearch(mid, end, nums));
-        if (nums[mid] > nums[end]) return bSearch(mid+1, end, nums);
-        else return bSearch(begin, mid-1, nums);
+        if (begin > end) return -1;
+        while (begin < end) {
+            int mid = begin + (end-begin) / 2;
+            if (nums[mid] > nums[end]) begin = mid+1;
+            else end = mid;
+        }
+        return nums[begin];
     }
     
     int findMin(vector<int>& nums) {
@@ -31,8 +29,9 @@ public:
 };
 
 int main(int argc, const char * argv[]) {
+    vector<int> nums = {11,13,15,17};
     Solution s;
-    vector<int> nums = {3, 1, 2};
-    int result = s.findMin(nums);
+    
+    int res = s.findMin(nums);
     return 0;
 }

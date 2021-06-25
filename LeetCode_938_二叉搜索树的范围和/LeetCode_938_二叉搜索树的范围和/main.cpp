@@ -72,6 +72,7 @@ public:
 //        }
 //        return ret;
 //    }
+    /* 一刷
     void inorder_trav(TreeNode *root, vector<int>& array) {
         if (!root) return;
         inorder_trav(root->left, array);
@@ -87,6 +88,29 @@ public:
             if (i > R) break;
         }
         return ret;
+    }
+     **/
+    /*
+     二刷
+     **/
+    int rangeSumBST(TreeNode* root, int low, int high) {
+        if (!root) return 0;
+        stack<TreeNode*> stk;
+        TreeNode *p = root;
+
+        int result = 0;
+        while (!stk.empty() || p) {
+            while (p) {
+                stk.push(p);
+                p = p->left;
+            }
+            p = stk.top();
+            if (p->val > high) break;
+            stk.pop();
+            if (p->val >= low && p->val <= high) result += p->val;
+            p = p->right;
+        }
+        return result;
     }
 };
 

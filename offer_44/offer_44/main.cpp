@@ -1,19 +1,19 @@
 //
 //  main.cpp
-//  LeetCode_135
+//  offer_44
 //
-//  Created by chx on 2020/12/24.
+//  Created by chx on 2021/3/31.
 //
 
 #include <iostream>
-#include <vector>
+
 
 using namespace std;
 
 class Solution {
 public:
-    int candy(vector<int>& ratings) {
-        int size = (int)ratings.size();
+    int findNthDigit(int n) {
+        
     }
 };
 
